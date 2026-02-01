@@ -1,0 +1,50 @@
+### read a users
+GET http://localhost:4000/user-api/users
+
+###readn user by id
+GET http://localhost:4000/user-api/users/697dba7c30106ee06a120764
+
+### create user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"charni",
+    "password":"checks",
+    "age":17
+}
+
+###update user
+PUT http://localhost:4000/user-api/users/697dbf297e73c2a15b9c7e8b
+Content-Type: application/json
+
+{
+  "username":"charni",
+  "password":"checks",
+  "age":17  
+}
+
+###delete user by objid
+DELETE http://localhost:4000/user-api/users/697dbf297e73c2a15b9c7e8b
+
+
+###product api
+
+###get user
+GET http://localhost:4000/product-api/products
+
+###create user
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "pid":1,
+    "productname":"toothpaste",
+    "cost":150
+}
+
+###update user
+PUT http://localhost:4000/product-api/products/697dcf9bfa527b93d7af6d57
+
+
+//for update validators wont work ony for creation
